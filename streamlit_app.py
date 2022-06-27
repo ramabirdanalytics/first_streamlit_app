@@ -35,7 +35,5 @@ my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * from fruit_load_list")
 my_data_row = my_cur.fetchall()
 streamlit.text("The Fruit Load List Contains:")
-streamlit.dataframe(my_data_row)
 fruit_entered= streamlit.text_input('What fruit would you liketo add?')
-streamlit.write('The user entered ',+fruit_entered )
-
+streamlit.dataframe(my_data_row,+fruit_entered)
