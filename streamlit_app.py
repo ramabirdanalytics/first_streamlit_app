@@ -1,5 +1,6 @@
 import streamlit
 import pandas
+import snowflake.connector
 
 streamlit.title("Jai Ganesh Om Sai Ram")
 streamlit.header("Breakfast Menu")
